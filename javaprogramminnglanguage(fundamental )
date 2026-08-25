@@ -1,10 +1,3 @@
-public class basics {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-        System.out.print("This is a basic Java program.");
-    }
-}
-
 /*primitative data types in java
 int a=10; 4bytes
 long b=10000000000L; 8bytes
@@ -13,4 +6,23 @@ char d='A'; 2bytes
 boolean e=true; 1byte
 float f=10.5f; 4bytes
 double g=10.5; 8bytes*/
+
+input and output:
+import java.util.*; 
+public class basics {
+    public static void main(String[] args) {
+        
+        Scanner sc= new Scanner(System.in);
+        int a= sc.nextInt();
+        System.out.println(a);
+    }
+}
+
+sc.next() single word input
+sc.nextLine() entire line input
+sc.nextInt() integer input
+sc.nextDouble() double input
+sc.nextBoolean() boolean input
+sc.nextLong() long input
+sc.nextFloat() float input
 
