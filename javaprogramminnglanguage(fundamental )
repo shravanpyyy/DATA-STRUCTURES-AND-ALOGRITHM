@@ -26,3 +26,43 @@ sc.nextBoolean() boolean input
 sc.nextLong() long input
 sc.nextFloat() float input
 
+//type conversion happens when
+// type compatible
+// destination type is larger than source type
+//byte->short->int->long->float->double
+//int num=sc.nextfloat(); //error
+//float num=sc.nextInt(); //ok
+
+// type casting: narrowing conversion
+// int marks= (int) 3.14; //explicit type casting
+// output: 3
+
+// float marks=99.999f;
+// int marks2= (int) marks; //explicit type casting
+// output: 99
+
+// type conversion in characters
+// char ch= 'a';
+// int num= ch; //implicit type conversion
+// output: 97
+                                     
+//type promotion in expressions:
+// java automatically promotes the smaller data type to the larger data type in expressions. For example, if you have
+an expression that involves an int and a float, the int will be promoted to a float before the operation is performed.
+// if one operand is of type double, the other operand will be promoted to double. This ensures that the result of
+the expression is of the larger data type, preventing loss of precision.
+// char ch1='a';
+// char ch2='b';
+// System.out.println(ch1+ch2); //output: 195
+// char c =ch1+ch2; //error: cannot convert from int to char
+// char c = (char)(ch1+ch2); //explicit type casting
+// byte b=5;
+// byte c=b*2; //error: cannot convert from int to byte
+// byte c=(byte)(b*2); //explicit type casting
+
+how code runs:
+source code -> compiler -> bytecode -> JVM(java virtual machine) -> machine code
+java is a portable language because it can run on any platform that has a JVM installed. 
+c++ is not a portable language because it is compiled directly to machine code, which is specific to the
+operating system and hardware architecture. This means that a C++ program compiled on one platform may not 
+run on another platform without recompilation.
